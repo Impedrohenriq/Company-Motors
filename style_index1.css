@@ -1,0 +1,226 @@
+body{
+    align-items: center;
+    background-image: url(Silvia.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+    h1{
+        left: 40%;
+        position: absolute;
+        color:black;
+        text-align: center;
+        font-size: 50px;
+        animation: changeColor 5s infinite; /* Altere 5s para o tempo desejado */
+        background-color: white;
+        border-radius: 10px;
+        padding: 10px 10px;
+    }
+
+    .carro_botao{
+        position: absolute;
+        left: 40px;
+        top: 20px;
+        width: 10%;
+        z-index: 50px;
+        cursor: pointer;
+        transition: transform 1s ease; /* Adicionando transição para suavizar a animação */
+    }
+
+    .carro_botao:hover{
+        transform: scale(1.08);
+        transition: 0.5s;
+    }
+
+    .carro_botao:not(hover){
+        transform: scale(1);
+        transition: 0.5s;
+    }
+
+    .carro_botao.clicked {
+        transform: translateX(200px);
+    }
+    
+
+    @keyframes changeColor {
+        0% { background-color: red; }
+        0% { color: purple; }
+
+        25% { background-color: blue; }
+        25% { color: orange; }
+
+        50% { background-color: green; }
+        50% { color: aqua; }
+
+        75% { background-color: orange; }
+        75% { color: rgb(255, 0, 255); }
+
+        100% { background-color: purple; }
+        100% { color: rgb(187, 255, 0); }
+
+    }
+
+    @keyframes changeColor2 {
+        
+        0% { color: purple; }
+
+        
+        25% { color: orange; }
+
+        
+        50% { color: aqua; }
+
+       
+        75% { color: rgb(255, 0, 255); }
+
+        
+        100% { color: rgb(187, 255, 0); }
+
+    }
+
+    @keyframes changeColor3 {
+        0% { background-color: red; }
+        
+
+        25% { background-color: blue; }
+        
+
+        50% { background-color: green; }
+        
+
+        75% { background-color: orange; }
+        
+
+        100% { background-color: purple; }
+        
+
+    }
+
+
+
+    h2{
+        position: absolute;
+        color:black;
+        animation: changeColor2 5s infinite; /* Altere 5s para o tempo desejado */
+        text-align: center;
+        font-size: 25px;
+        top: 10px;
+        left: 10px;
+    }
+    
+    h3{
+        position: absolute;
+        color:black;
+        animation: changeColor3 5s infinite; /* Altere 5s para o tempo desejado */
+        text-align: center;
+        font-size: x-large;
+        top: 100px;
+        left: 30%;
+    }
+    
+    h4{
+        position: absolute;
+        color:black;
+        background-color: beige;
+        text-align: center;
+    }
+    
+    .btn_silva{
+        bottom: 60%;
+        left: 50%;
+        padding: 5px 10px;
+        border-radius: 10px;
+        background-color: rgb(55, 55, 218);
+        position: absolute;
+        cursor: pointer;
+    }
+    .btn_silva a{
+        text-decoration: none;
+        color:black;
+    }
+    .btn_silva:hover{
+        background-color: rgb(88, 202, 236);
+        transition: 1s;
+        transform: scale(1.2);
+    
+    }
+    .descricao_silvia{
+        position: absolute;
+        text-align: center;
+        color:black;
+        background-color: beige;
+        top: 250px;
+    }
+
+    .menu_nav{
+        height: 450px;
+
+        width: 250px;
+
+        position: absolute;
+
+        left: 63px;
+
+        top: 204px;
+
+        z-index: 9999;
+
+        background-color: #24242486;
+
+        color: white;
+
+        display: flex;
+
+        box-shadow: #00000000 5px 5px 5px 5px;
+
+        border-radius: 10px 10px 10px 10px;
+
+        user-select: none;
+
+        list-style: none;
+
+        opacity: 0;
+
+        visibility: hidden;
+    }
+
+    .menu_nav.ativo{
+        opacity: 1;
+
+        visibility: visible;
+      }
+
+    .menu_nav:hover { 
+      transition: 1s;
+
+      box-shadow: #00e21ec4 5px 5px 5px 5px;
+    }
+  
+    .menu_nav:not(:hover){
+      box-shadow: #392e3d00 5px 5px 5px 5px;
+
+      transition: 1s;
+    }
+
+    .menu_nav .menu{
+      user-select: none;
+
+    }
+
+    .menu_nav .menu ul{
+      top: 80px;
+
+      display: flex;
+
+      flex-direction: column;
+
+      background: wheat;
+
+      list-style: none;
+    }
+
+    /* menu_toggle */
+    .menu_nav .menuToggle{
+      position: relative;
+      
+      background-color: #64128500;
+    }
